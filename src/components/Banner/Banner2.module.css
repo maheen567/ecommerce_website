@@ -1,0 +1,160 @@
+.small_banner {
+    padding: 0 60px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.small_banner .small_banner1 {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    width: 550px;
+    height: 50vh;
+    background-image: url('/banner_2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+.small_banner .small_banner1 h4 {
+    color:rgb(37, 58, 6);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.small_banner .small_banner1 h2 {
+    color: white; 
+    font-size: 40px;
+}
+
+.small_banner .small_banner1 span {
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgb(37, 58, 6);
+    border-radius: 6px;
+}
+
+.small_banner .small_banner1 button {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.2s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 2px solid rgb(37, 58, 6);
+}
+
+.small_banner .small_banner1 button:hover {
+    background-color:rgb(37, 58, 6);
+    color: white;
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+
+.small_banner .small_banner2 {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   width: 550px;
+    height: 50vh;
+    background-image: url('/banner_3.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+
+.small_banner .small_banner2 h4 {
+    color: rgb(132, 86, 29);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.small_banner .small_banner2 h2 {
+    color:rgb(240, 237, 237); 
+    font-size: 40px;
+}
+
+
+.small_banner .small_banner2 span {
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgb(132, 86, 29);
+    border-radius: 6px;
+}
+
+.small_banner .small_banner2 button {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.2s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 2px solid rgb(132, 86, 29);
+}
+
+.small_banner .small_banner2 button:hover {
+    background-color:rgb(132, 86, 29);
+    color: white;
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+
+@media (max-width: 850px){
+    .small_banner {
+        padding: 0 ;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .small_banner1 {
+        min-width: 100%;
+        max-height: 40vh;
+    }
+    .small_banner2 {
+        min-width: 100%;
+        max-height: 40vh;
+    }
+}
+
+@media (max-width: 477px) {
+    .small_banner {
+        padding: 0 10px;
+        gap: 10px;
+    }
+    .small_banner1 {
+        max-width: max-content;
+        max-height: 30vh;
+    }
+    .small_banner .small_banner1 h2 {
+        font-size: 30px;
+    }
+    .small_banner .small_banner1 span {
+        font-size: 12px;
+    }
+    .small_banner2 {
+        max-width:min-content;
+        max-height: 30vh;
+        line-height: normal;
+    }
+    .small_banner .small_banner2 h2 {
+        font-size: 30px;
+    }
+    .small_banner .small_banner2 span {
+        font-size: 12px;
+    }
+}

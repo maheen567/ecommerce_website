@@ -1,0 +1,141 @@
+
+.offerBanners{
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offerBanners .seasonal_sale_banner {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 22%;
+    height: 30vh;
+    background-image: url('/seasonal_sale_banner.jpg');
+    background-size: cover;
+    background-position:center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px ;
+    transition: 0.2s ease;
+}
+
+.offerBanners .seasonal_sale_banner:hover{
+    transform: scale(1.05);
+}
+
+.offerBanners .seasonal_sale_banner h4 {
+    color: rgb(27, 27, 72);
+    font-size: 25px ;
+}
+
+.offerBanners .seasonal_sale_banner p {
+    color: rgb(89, 88, 88);
+    font-weight: 500;
+}
+
+.offerBanners .tshirts_banner {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 52%;
+    height: 30vh;
+    background-image: url('/tshirts_banner.jpg');
+    background-size: cover;
+    background-position:center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px ;
+    transition: 0.2s ease;
+
+}
+
+.offerBanners .tshirts_banner:hover {
+    transform: scale(1.05);
+}
+
+.offerBanners .tshirts_banner h4 {
+    color: whitesmoke;
+    font-size: 35px ;
+}
+
+.offerBanners .tshirts_banner p {
+    color:black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.offerBanners .footwears_banner {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 22%;
+    height: 30vh;
+    background-image: url('/footwear_banner.jpg');
+    background-size: cover;
+    background-position:right;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px ;
+    transition: 0.2s ease;
+}
+
+.offerBanners .footwears_banner h4 {
+    color: black;
+    font-size: 25px ;
+}
+
+.offerBanners .footwears_banner p {
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.offerBanners .footwears_banner:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 850px) {
+    .offerBanners {
+        padding: 10px;
+    }
+    .seasonal_sale_banner {
+        max-height: 20vh;
+        text-align: center;
+    }
+    .tshirts_banner  {
+        max-height: 20vh;
+        text-align: center;
+    }
+    .footwears_banner {
+        max-height: 20vh;
+        text-align: center;
+    }
+}
+
+@media (max-width: 477px) {
+    .offerBanners {
+        flex-direction: column;
+        padding: 10px 10px;
+        gap: 10px;
+    }
+    .seasonal_sale_banner {
+        min-width: 100%;
+        max-height: 30vh;
+    }
+    .tshirts_banner {
+        min-width: 100%;
+        max-height: 30vh;
+    }
+    .footwears_banner 
+    {
+        min-width: 100%;
+        max-height: 30vh;
+    }
+}

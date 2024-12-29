@@ -1,0 +1,124 @@
+.shirts_section {
+    padding: 100px 0 0px 0px;
+}
+
+.shirts_section .product_container_div {
+    padding: 20px 60px;
+}
+
+.shirts_section .product_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shirts_section h2 {
+    text-align: center;
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+.shirts_section p {
+    text-align: center;
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.shirts_section .product_wrapper {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #CCE7D0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.shirts_section .product_wrapper:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #088168;
+}
+
+.shirts_section .product_wrapper img {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.product_wrapper .product_details {
+    padding: 10px 0;
+}
+
+.product_wrapper .product_details span {
+    color: #606063;
+    font-size: 14px;
+}
+
+.product_wrapper .product_details h5 {
+    margin-top: 7px;
+    color: #1a1a1a;
+    font-size: 18px;
+}
+
+.product_wrapper .product_details .star {
+    font-size: 14px;
+    color: rgb(243, 181, 25);
+    margin-top: 7px;
+}
+
+.product_wrapper .product_details h4 
+{
+    margin-top: 7px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #088168;
+}
+
+.product_wrapper .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    
+}
+
+.product_wrapper .links .view_details {
+    font-size: 14px;
+    color: #606063;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.product_wrapper .links .view_details:hover {
+    color: #1a1a1a;
+    font-weight:600;
+}
+
+.product_wrapper .links .shopping_cart {
+   border-radius: 50%;
+   font-weight: 700;
+   color: #088168;
+   cursor: pointer;
+   transition: 0.2s ease;
+}
+
+.product_wrapper .links .shopping_cart:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 799px) {
+    .shirts_section  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .shirts_section .product_container {
+        justify-content: center;
+        gap: 10px 50px;
+    }
+}

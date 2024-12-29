@@ -1,0 +1,28 @@
+.button_container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 13px 28px;
+    font-size: 16px;
+    color: white;
+    background-color: #088168;
+    border: 1px solid  white;
+    outline: none;
+    cursor: pointer;
+    font-weight: 450;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.button_container .cart_icon {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.button_container button:hover{
+    background-color: white;
+    color: #088168;
+    border: 1px solid #088168;
+}
+

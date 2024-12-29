@@ -1,0 +1,138 @@
+/* For Header */
+.header {
+  background-color: #e3e6f3;
+  color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.navbar {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 80px;
+}
+
+.logoText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+  text-decoration: none;
+}
+
+.navbar .navMenu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navMenu .navlink {
+  text-decoration: none;
+  color: #1a1a1a;
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar .navMenu .navlink:hover {
+  color: #088168;
+  text-decoration: 5px underline;
+}
+
+
+.navbar .menu_icon_div {
+  display: none;
+}
+
+.navbar .menu_icon_div button {
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+  }
+
+  .navbar .logoText {
+    font-size: 37px;
+  }
+
+  .navbar .menu_icon_div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .menu_icon_div .menu_icon {
+    font-size: 25px;
+    color: #1a1a1a;
+    cursor: pointer;
+  }
+
+  .navbar .web_menu {
+    display: none;
+  }
+
+  .navbar .mobile_menu {
+    display: flex;
+    background-color: #e3e6f3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    height: 100vh;
+    width: 300px;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 50px 0 0 0;
+  }
+
+  .navbar .navMenu .navItem {
+    margin-bottom: 45px;
+  }
+
+  .navbar .navMenu .navlink {
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 0;
+  }
+
+  .navbar .navMenu .navlink:hover {
+    background-color: #088168;
+    padding: 12px 26px;
+    color: #e3e6f3;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+
+  .navbar .navMenu .navlink .cartIcon {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+.navbar { 
+  max-width: 100%;
+  padding: 15px;
+}
+
+.navbar .navLogo {
+  gap: 5px;
+  font-size: 30px;
+}
+}
+
+
+

@@ -1,0 +1,28 @@
+.shop_header {
+    height: 40px;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+}
+
+.shop_header .link {
+    color: white;
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+
+.shop_header .link:hover {
+    text-decoration: 3px underline #088168;
+    font-weight: 500;
+}
+
+
+@media (max-width: 799px) {
+    .shop_header {
+       margin: auto;
+    }
+}
